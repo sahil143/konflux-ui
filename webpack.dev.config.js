@@ -8,6 +8,38 @@ export default merge(commonConfig, {
   devtool: 'inline-source-map',
   devServer: {
     hot: true,
+    proxy: [
+      {
+        context: (path) => path.includes('/api/k8s/registration'),
+        // [TODO]: change API URL
+        target: 'REGISTRATION_URL',
+        secure: false,
+        changeOrigin: true,
+        autoRewrite: true,
+        ws: true,
+        pathRewrite: { '^/api/k8s/registration': '' },
+      },
+      {
+        context: (path) => path.includes('/api/k8s'),
+        // [TODO]: change API URL
+        target: 'PROXY_URL',
+        secure: false,
+        changeOrigin: true,
+        autoRewrite: true,
+        ws: true,
+        pathRewrite: { '^/api/k8s': '' },
+      },
+      {
+        context: (path) => path.includes('/wss/k8s'),
+        // [TODO]: change API URL
+        target: 'PROXY_WEBSOCKET_URL',
+        secure: false,
+        changeOrigin: true,
+        autoRewrite: true,
+        ws: true,
+        pathRewrite: { '^/wss/k8s': '' },
+      },
+    ],
   },
   module: {
     rules: [
