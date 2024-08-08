@@ -10,6 +10,14 @@ export default merge(commonConfig, {
     hot: true,
     proxy: [
       {
+        context: (path) => path.includes('/oauth2/') || path.includes('/idp/'),
+        // [TODO]: change API URL
+        target: 'https://127.0.0.1:9443/',
+        secure: false,
+        changeOrigin: true,
+        autoRewrite: true,
+      },
+      {
         context: (path) => path.includes('/api/k8s/registration'),
         // [TODO]: change API URL
         target: 'REGISTRATION_URL',

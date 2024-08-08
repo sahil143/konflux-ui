@@ -27,6 +27,7 @@ export const AppHeader: React.FC<{ isSideBarOpen: boolean; onSideBarOpen: () => 
       <MastheadMain>
         <MastheadBrand>Konflux Logo</MastheadBrand>
       </MastheadMain>
+      <a href="/oauth2/sign_in">Login</a>
     </Masthead>
   );
 };
