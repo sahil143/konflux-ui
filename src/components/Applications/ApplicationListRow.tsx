@@ -43,7 +43,7 @@ const ApplicationListRow: React.FC<React.PropsWithChildren<RowFunctionArgs<Appli
     <>
       <TableData className={applicationTableColumnClasses.name} data-testid="app-row-test-id">
         <Link
-          to={`/application-pipeline/workspaces/${workspace}/applications/${obj.metadata?.name}`}
+          to={`/workspaces/${workspace}/applications/${obj.metadata?.name}`}
           title={displayName}
         >
           {displayName}
