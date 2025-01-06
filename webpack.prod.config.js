@@ -19,4 +19,12 @@ export default merge(commonConfig, {
     ],
   },
   plugins: [new MiniCssExtractPlugin({ filename: '[name].css' })],
+  resolve: {
+    alias: {
+      // Replace the standard React DOM with the profiling build
+      'react-dom$': 'react-dom/profiling',
+      // Replace the standard Scheduler with the profiling version
+      'scheduler/tracing': 'scheduler/tracing-profiling',
+    },
+  },
 });
