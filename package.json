@@ -14,6 +14,7 @@
     "coverage": "jest --coverage --runInBand --detectOpenHandles --forceExit --testPathIgnorePatterns=/pact-tests",
     "lint": "yarn lint:ts && yarn lint:sass",
     "lint:ts": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:final": "eslint . --ext ts,tsx --config .eslintrc.restrict-imports.cjs --report-unused-disable-directives --max-warnings 0",
     "lint:sass": "stylelint 'src/**/*.scss' --config .stylelintrc.json",
     "prepare": "husky",
     "analyze": "source-map-explorer 'dist/*.js'",

@@ -23,7 +23,7 @@ module.exports = {
     tsconfigRootDir: './',
     extraFileExtensions: ['.json'],
   },
-  plugins: ['prettier', 'react-refresh'],
+  plugins: ['prettier', 'react-refresh', 'import'],
   rules: {
     "@typescript-eslint/no-misused-promises": "off",
     "@typescript-eslint/no-unsafe-call": "off",
@@ -149,4 +149,6 @@ module.exports = {
       version: 'detect',
     },
   },
+  overrides: [
+  ],
 };
