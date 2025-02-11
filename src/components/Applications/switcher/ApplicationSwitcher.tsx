@@ -8,8 +8,8 @@ import {
   APPLICATION_LIST_PATH,
   IMPORT_PATH,
 } from '../../../routes/paths';
+import { ButtonWithAccessTooltip } from '../../../shared/components';
 import { useAccessReviewForModel } from '../../../utils/rbac';
-import { ButtonWithAccessTooltip } from '../../ButtonWithAccessTooltip';
 import { ContextMenuItem, ContextSwitcher } from '../../ContextSwitcher';
 import { useNamespace } from '../../Namespace/useNamespaceInfo';
 

@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Label, Skeleton, Tooltip } from '@patternfly/react-core';
 import usePACState, { PACState } from '../../hooks/usePACState';
+import { useTrackEvent, TrackEvents } from '../../shared/components/';
 import { ComponentKind } from '../../types';
-import { useTrackEvent, TrackEvents } from '../../utils/analytics';
 import { useComponentBuildStatus } from '../../utils/component-utils';
 import { useModalLauncher } from '../modal/ModalProvider';
 import { useWorkspaceInfo } from '../Workspace/useWorkspaceInfo';

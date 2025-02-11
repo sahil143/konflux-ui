@@ -1,8 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Formik } from 'formik';
+import { useTrackEvent, TrackEvents } from '../../../shared/components/';
 import { IntegrationTestScenarioKind } from '../../../types/coreBuildService';
-import { useTrackEvent, TrackEvents } from '../../../utils/analytics';
 import { useWorkspaceInfo } from '../../Workspace/useWorkspaceInfo';
 import { defaultSelectedContextOption } from '../utils/creation-utils';
 import IntegrationTestForm from './IntegrationTestForm';

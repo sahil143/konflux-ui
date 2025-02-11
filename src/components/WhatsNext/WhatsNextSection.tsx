@@ -8,8 +8,8 @@ import {
   SplitItem,
   Title,
 } from '@patternfly/react-core';
+import { ButtonWithAccessTooltip } from '../../shared/components';
 import ExternalLink from '../../shared/components/links/ExternalLink';
-import { ButtonWithAccessTooltip } from '../ButtonWithAccessTooltip';
 
 import './WhatsNextSection.scss';
 

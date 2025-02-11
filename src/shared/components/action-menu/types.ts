@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { AnalyticsButtonProperties } from '../../../utils/analytics';
+import { AnalyticsButtonProperties } from '../';
 
 export type Action = {
   id: string;

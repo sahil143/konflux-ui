@@ -10,9 +10,9 @@ import {
 } from '@patternfly/react-core';
 import { useComponents } from '../../hooks/useComponents';
 import { ComponentModel } from '../../models';
+import { ButtonWithAccessTooltip } from '../../shared/components';
 import { ComponentKind } from '../../types';
 import { useAccessReviewForModel } from '../../utils/rbac';
-import { ButtonWithAccessTooltip } from '../ButtonWithAccessTooltip';
 import { RawComponentProps } from '../modal/createModalLauncher';
 import { useWorkspaceInfo } from '../Workspace/useWorkspaceInfo';
 import CustomizePipeline from './CustomizePipelines';

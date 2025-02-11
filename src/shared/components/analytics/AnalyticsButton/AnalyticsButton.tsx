@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Button, ButtonProps } from '@patternfly/react-core';
-import { AnalyticsButtonProperties, useTrackEvent, TrackEvents } from '../../utils/analytics';
+import { AnalyticsButtonProperties, useTrackEvent, TrackEvents } from '../analytics';
 
 const AnalyticsButton: React.FC<
   React.PropsWithChildren<

@@ -1,8 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Formik, FormikHelpers } from 'formik';
+import { TrackEvents, useTrackEvent } from '../../../shared/components/';
 import { SpaceBindingRequest } from '../../../types';
-import { TrackEvents, useTrackEvent } from '../../../utils/analytics';
 import { useWorkspaceInfo } from '../../Workspace/useWorkspaceInfo';
 import { invalidateWorkspaceQuery } from '../../Workspace/utils';
 import { createSBRs, editSBR, userAccessFormSchema, UserAccessFormValues } from './form-utils';

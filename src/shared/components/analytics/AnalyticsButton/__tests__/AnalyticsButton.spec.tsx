@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom';
 import { render } from '@testing-library/react';
-import { TrackEvents } from '../../../utils/analytics';
+import { TrackEvents } from '../../analytics';
 import AnalyticsButton from '../AnalyticsButton';
 
 const trackMock = jest.fn();

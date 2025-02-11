@@ -25,13 +25,13 @@ import usePACStatesForComponents from '../../../hooks/usePACStatesForComponents'
 import { useSearchParam } from '../../../hooks/useSearchParam';
 import { ComponentModel } from '../../../models';
 import { Table } from '../../../shared';
+import { ButtonWithAccessTooltip } from '../../../shared/components';
 import AppEmptyState from '../../../shared/components/empty-state/AppEmptyState';
 import FilteredEmptyState from '../../../shared/components/empty-state/FilteredEmptyState';
 import ExternalLink from '../../../shared/components/links/ExternalLink';
 import { ComponentKind } from '../../../types';
 import { useURLForComponentPRs } from '../../../utils/component-utils';
 import { useAccessReviewForModel } from '../../../utils/rbac';
-import { ButtonWithAccessTooltip } from '../../ButtonWithAccessTooltip';
 import { createCustomizeAllPipelinesModalLauncher } from '../../CustomizedPipeline/CustomizePipelinesModal';
 import { GettingStartedCard } from '../../GettingStartedCard/GettingStartedCard';
 import { useModalLauncher } from '../../modal/ModalProvider';

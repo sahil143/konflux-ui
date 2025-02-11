@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Formik, FormikHelpers } from 'formik';
 import { useAllComponents, useComponents } from '../../hooks/useComponents';
+import { TrackEvents, useTrackEvent } from '../../shared/components/';
 import { ComponentKind } from '../../types';
-import { TrackEvents, useTrackEvent } from '../../utils/analytics';
 import { RawComponentProps, createRawModalLauncher } from '../modal/createModalLauncher';
 import { useWorkspaceInfo } from '../Workspace/useWorkspaceInfo';
 import {

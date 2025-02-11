@@ -38,6 +38,13 @@ module.exports = {
             from: ['./src/!(shared|k8s)/**/*'],
             message: 'Files in `./src/shared` may only import from `./src/shared` or `./src/k8s`.',
           },
+          // Zone 6: Files in `./src/utils/utils.ts` should not import from any module to avoid cirular dependencies.
+          {
+            target: './src/routes/utils.ts',
+            from: '**',
+            message:
+              'File `./src/routes/utils.ts` should not import from any module to avoid cirular dependencies.',
+          },
         ],
       },
     ],

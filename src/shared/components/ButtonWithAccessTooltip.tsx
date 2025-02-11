@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Tooltip } from '@patternfly/react-core';
-import AnalyticsButton from './AnalyticsButton/AnalyticsButton';
+import { AnalyticsButton } from './analytics';
 
 export const ButtonWithAccessTooltip: React.FC<
   React.PropsWithChildren<

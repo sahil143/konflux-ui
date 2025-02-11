@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import { EmptyStateBody, EmptyStateActions } from '@patternfly/react-core';
 import emptyStateImgUrl from '../../assets/Pipeline.svg';
 import { ComponentModel } from '../../models';
+import { ButtonWithAccessTooltip } from '../../shared/components';
 import AppEmptyState from '../../shared/components/empty-state/AppEmptyState';
 import { useAccessReviewForModel } from '../../utils/rbac';
-import { ButtonWithAccessTooltip } from '../ButtonWithAccessTooltip';
 import { useWorkspaceInfo } from '../Workspace/useWorkspaceInfo';
 
 interface PipelineRunEmptyStateProps {

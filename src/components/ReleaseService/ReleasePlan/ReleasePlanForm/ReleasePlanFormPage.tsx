@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Formik, FormikHelpers } from 'formik';
+import { useTrackEvent, TrackEvents } from '../../../../shared/components/';
 import { ReleasePlanKind, ReleasePlanLabel } from '../../../../types/coreBuildService';
-import { useTrackEvent, TrackEvents } from '../../../../utils/analytics';
 import { ResolverRefParams } from '../../../IntegrationTests/IntegrationTestForm/utils/create-utils';
 import { useWorkspaceInfo } from '../../../Workspace/useWorkspaceInfo';
 import {

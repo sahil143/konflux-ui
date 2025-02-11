@@ -26,9 +26,14 @@ import successIconUrl from '../../assets/success.svg';
 import { useApplicationPipelineGitHubApp } from '../../hooks/useApplicationPipelineGitHubApp';
 import { PACState } from '../../hooks/usePACState';
 import { ComponentModel } from '../../models';
+import {
+  ButtonWithAccessTooltip,
+  useTrackEvent,
+  TrackEvents,
+  AnalyticsButton,
+} from '../../shared/components';
 import ExternalLink from '../../shared/components/links/ExternalLink';
 import { ComponentKind } from '../../types';
-import { useTrackEvent, TrackEvents } from '../../utils/analytics';
 import {
   enablePAC,
   disablePAC,
@@ -36,8 +41,6 @@ import {
   getLastestImage,
 } from '../../utils/component-utils';
 import { useAccessReviewForModel } from '../../utils/rbac';
-import AnalyticsButton from '../AnalyticsButton/AnalyticsButton';
-import { ButtonWithAccessTooltip } from '../ButtonWithAccessTooltip';
 import GitRepoLink from '../GitLink/GitRepoLink';
 import { RawComponentProps } from '../modal/createModalLauncher';
 import { useWorkspaceInfo } from '../Workspace/useWorkspaceInfo';

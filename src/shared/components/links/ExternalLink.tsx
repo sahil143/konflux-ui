@@ -2,8 +2,7 @@ import * as React from 'react';
 import { ButtonProps, ButtonVariant, Icon } from '@patternfly/react-core';
 import { ExternalLinkAltIcon } from '@patternfly/react-icons/dist/esm/icons/external-link-alt-icon';
 import { css } from '@patternfly/react-styles';
-import AnalyticsButton from '../../../components/AnalyticsButton/AnalyticsButton';
-import { AnalyticsButtonProperties } from '../../../utils/analytics';
+import { AnalyticsButton, AnalyticsButtonProperties } from '../analytics';
 import './ExternalLink.scss';
 
 type ExternalLinkProps = {

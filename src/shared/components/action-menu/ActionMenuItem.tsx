@@ -4,7 +4,7 @@ import { MenuItem, Tooltip, MenuItemProps } from '@patternfly/react-core';
 import { DropdownItemProps } from '@patternfly/react-core/deprecated';
 import isFunction from 'lodash/isFunction';
 import isObject from 'lodash/isObject';
-import AnalyticsButton from '../../../components/AnalyticsButton/AnalyticsButton';
+import { AnalyticsButton } from '../analytics';
 import { Action } from './types';
 
 export type ActionMenuItemProps = {

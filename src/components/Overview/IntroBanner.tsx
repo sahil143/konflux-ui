@@ -14,10 +14,10 @@ import {
 import { useApplications } from '../../hooks/useApplications';
 import { ApplicationModel, ComponentModel } from '../../models';
 import { APPLICATION_LIST_PATH, IMPORT_PATH } from '../../routes/paths';
+import { ButtonWithAccessTooltip } from '../../shared/components';
 import ExternalLink from '../../shared/components/links/ExternalLink';
 import { AccessReviewResources } from '../../types';
 import { useAccessReviewForModels } from '../../utils/rbac';
-import { ButtonWithAccessTooltip } from '../ButtonWithAccessTooltip';
 import { useNamespace } from '../Namespace/useNamespaceInfo';
 import { SignupStatus } from '../SignUp/signup-utils';
 import SignupButton from '../SignUp/SignupButton';

@@ -3,7 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { Formik, FormikHelpers } from 'formik';
 import { useReleasePlans } from '../../../../hooks/useReleasePlans';
 import { RouterParams } from '../../../../routes/utils';
-import { useTrackEvent, TrackEvents } from '../../../../utils/analytics';
+import { useTrackEvent, TrackEvents } from '../../../../shared/components/';
 import { useWorkspaceInfo } from '../../../Workspace/useWorkspaceInfo';
 import { TriggerReleaseFormValues, createRelease, triggerReleaseFormSchema } from './form-utils';
 import { TriggerReleaseForm } from './TriggerReleaseForm';

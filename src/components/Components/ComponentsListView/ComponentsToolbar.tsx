@@ -18,10 +18,10 @@ import {
 import { FilterIcon } from '@patternfly/react-icons/dist/esm/icons/filter-icon';
 import { useSearchParam } from '../../../hooks/useSearchParam';
 import { ComponentModel } from '../../../models';
+import { ButtonWithAccessTooltip } from '../../../shared/components';
 import { ComponentKind, PipelineRunKind } from '../../../types';
 import { pipelineRunStatus, runStatus } from '../../../utils/pipeline-utils';
 import { useAccessReviewForModel } from '../../../utils/rbac';
-import { ButtonWithAccessTooltip } from '../../ButtonWithAccessTooltip';
 import { useWorkspaceInfo } from '../../Workspace/useWorkspaceInfo';
 
 export const FAILED_STATUS_FILTER_ID = 'failed';

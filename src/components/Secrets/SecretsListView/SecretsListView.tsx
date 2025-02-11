@@ -13,10 +13,10 @@ import secretEmptyStateIcon from '../../../assets/secret.svg';
 import { useSearchParam } from '../../../hooks/useSearchParam';
 import { useSecrets } from '../../../hooks/useSecrets';
 import { SecretModel } from '../../../models';
+import { ButtonWithAccessTooltip } from '../../../shared/components';
 import AppEmptyState from '../../../shared/components/empty-state/AppEmptyState';
 import FilteredEmptyState from '../../../shared/components/empty-state/FilteredEmptyState';
 import { useAccessReviewForModel } from '../../../utils/rbac';
-import { ButtonWithAccessTooltip } from '../../ButtonWithAccessTooltip';
 import { useNamespace } from '../../Namespace/useNamespaceInfo';
 import SecretsList from './SecretsList';
 
