@@ -8,6 +8,7 @@ import { initAnalytics } from '~/analytics';
 import { analyticsService, consumeLoginSignal } from '~/analytics/AnalyticsService';
 import { useKonfluxPublicInfo } from '~/hooks/useKonfluxPublicInfo';
 import { initMonitoring } from '~/monitoring';
+import { obfuscate } from './analytics/obfuscate';
 import { AuthProvider } from './auth/AuthContext';
 import { useAuth } from './auth/useAuth';
 import { useAuthAnalytics } from './auth/useAuthAnalytics';
@@ -48,9 +49,12 @@ const App = () => {
       });
     }
 
-    if (consumeLoginSignal()) {
-      onLogin(user);
-    }
+    void obfuscate(user.preferredUsername, publicInfo?.clusterId).then((userId) => {
+      analyticsService.setCommonProperties({ userId });
+      if (consumeLoginSignal()) {
+        onLogin();
+      }
+    });
   }, [loaded, error, publicInfo, onLogin, user]);
 
   React.useEffect(() => {
